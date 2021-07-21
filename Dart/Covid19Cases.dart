@@ -92,3 +92,40 @@ void main() {
     print("${key[i]} \t\t ${value[i]} \n");
   }
 }
+
+/*
+Output: 
+
+                                        ----------------
+                                         Covid-19 Cases
+                                        ----------------
+
+Maharashtra              {Confirmed: 1234, Active: 2345, Recovered: 2343, Deceased: 5736}
+
+Kerala           {Confirmed: 7677, Active: 7654, Recovered: 6777, Deceased: 5654}
+
+Karnataka                {Confirmed: 9898, Active: 5765, Recovered: 5665, Deceased: 4554}
+
+Tamil_Nadu               {Confirmed: 8785, Active: 5467, Recovered: 5454, Deceased: 2345}
+
+Punjab           {Confirmed: 4546, Active: 2354, Recovered: 9887, Deceased: 4554}
+
+Delhi            {Confirmed: 4254, Active: 8762, Recovered: 3563, Deceased: 5363}
+
+
+                         --------------------------------------------
+                          States Sorted on the basis of Active Cases
+                         --------------------------------------------
+
+Maharashtra              {Confirmed: 1234, Active: 2345, Recovered: 2343, Deceased: 5736}
+
+Punjab           {Confirmed: 4546, Active: 2354, Recovered: 9887, Deceased: 4554}
+
+Tamil_Nadu               {Confirmed: 8785, Active: 5467, Recovered: 5454, Deceased: 2345}
+
+Karnataka                {Confirmed: 9898, Active: 5765, Recovered: 5665, Deceased: 4554}
+
+Kerala           {Confirmed: 7677, Active: 7654, Recovered: 6777, Deceased: 5654}
+
+Delhi            {Confirmed: 4254, Active: 8762, Recovered: 3563, Deceased: 5363}
+*/
