@@ -170,4 +170,8 @@ void main(){
 
 // https://www.covid19india.org/
 // Apply a logic to sort the data as per number of cases in states
+
+
+// State less ->  Static
+// State full -> Dynamic
 ```
