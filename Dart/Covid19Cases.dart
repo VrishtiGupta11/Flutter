@@ -62,25 +62,13 @@ void main() {
   for (int i = 0; i < states.length; i++) {
     for (int j = 0; j < states.length; j++) {
       if (value[i]['Active'] < value[j]['Active']) {
-        var temp1 = value[i]['Active'];
-        value[i]['Active'] = value[j]['Active'];
-        value[j]['Active'] = temp1;
-
-        var temp2 = value[i]['Confirmed'];
-        value[i]['Confirmed'] = value[j]['Confirmed'];
-        value[j]['Confirmed'] = temp2;
-
-        var temp3 = value[i]['Recovered'];
-        value[i]['Recovered'] = value[j]['Recovered'];
-        value[j]['Recovered'] = temp3;
-
-        var temp4 = value[i]['Deceased'];
-        value[i]['Deceased'] = value[j]['Deceased'];
-        value[j]['Deceased'] = temp4;
-
-        var temp5 = key[i];
+        var temp1 = key[i];
         key[i] = key[j];
-        key[j] = temp5;
+        key[j] = temp1;
+
+        var temp2 = value[i];
+        value[i] = value[j];
+        value[j] = temp2;
       }
     }
   }
