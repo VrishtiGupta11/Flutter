@@ -43,7 +43,8 @@ addNumbers2({int a=1, int b=2, int c=3}){
   return sum;
 }
 
-
+// parameters Inside list are optional
+// Compulsive default value inside list
 addNumbers3(int a, int b, int c, [String name="Fionna", int age=10]){
   int sum = a+b+c;
   
@@ -52,7 +53,8 @@ addNumbers3(int a, int b, int c, [String name="Fionna", int age=10]){
   print("sum is: ${sum}");
 }
 
-// Named Parameters
+// Optional and Named Parameters
+// Compulsive Default value
 addNumbers4({int a=0, int b=0, int c=0, String name="Fionna", int age=10}){
   int sum = a+b+c;
   
@@ -116,6 +118,7 @@ void printNumber({int num:5}){
     return;
   }
 }
+// exit is termination of entire app so use return
 
 void main(){
 
