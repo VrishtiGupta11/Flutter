@@ -4,7 +4,7 @@
   ListOfProducts / Category
     Electronics, Hosiery, Grocery, Toys, TravellingKit, Fashion, Furniture, etc.
   Product
-    Name, Price, ProductCode, Category
+    Name, ProductCode, Price, Discount, Category, Description, Rating, Picture
   TypesOfUsers
     Customers, Sellers, Developers, SalesMan, CustomerCarePersons
   User 
@@ -16,7 +16,7 @@
   Sellers
     Order, User
   ShoppingCart
-    Product, Discount, PromoCode, Order, User
+    Product, PromoCode, Order, User
   PaymentMOde 
     Card, Netbanking, CashOnDelivery, Bank
 */
