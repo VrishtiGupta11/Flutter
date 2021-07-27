@@ -1,3 +1,5 @@
+// https://www.makemytrip.com/flights/?cmp=SEM|D|DF|G|Generic|DF_Generic_Exact|Airfare_Exact|RSA|Offer4|529579610094&s_kwcid=AL!1631!3!529579610094!e!!g!!air%20trip&ef_id=Cj0KCQjw3f6HBhDHARIsAD_i3D8c-SRIyCw3-HVkhS0uXhKuYyWTyRu3kcmxD94pNoIB3lcR5kbnFu4aArb0EALw_wcB:G:s&gclid=Cj0KCQjw3f6HBhDHARIsAD_i3D8c-SRIyCw3-HVkhS0uXhKuYyWTyRu3kcmxD94pNoIB3lcR5kbnFu4aArb0EALw_wcB
+
 class OneWay {
   String? from;
   String? to;
