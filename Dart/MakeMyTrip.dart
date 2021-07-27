@@ -65,9 +65,9 @@ void main() {
       Return: 'Delhi'));
 
   print("\n---MULTI CITY---");
-  print(MultiCity(noOfTrips: 3, oneWay: [
+  MultiCity(noOfTrips: 3, oneWay: [
     OneWay(from: 'A', to: 'B', departure: '30 July, 2021'),
     OneWay(from: 'B', to: 'C', departure: '30 July, 2021'),
     OneWay(from: 'C', to: 'D', departure: '31 July, 2021')
-  ]));
+  ]);
 }
