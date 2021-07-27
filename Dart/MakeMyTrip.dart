@@ -45,7 +45,7 @@ class MultiCity {
   List<OneWay>? oneWay;
 
   MultiCity({this.noOfTrips, this.oneWay}) {
-    print("'noOfTrips': ${noOfTrips}\n");
+    print("No Of Trips: ${noOfTrips}\n");
     oneWay!.forEach((element) {
       print(
           "from: ${element.from}, to: ${element.to}, departure: ${element.departure}");
