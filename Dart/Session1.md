@@ -63,7 +63,7 @@ void main() {
   print("Please Pay \u20b9 ${amount}");
   
   
-  // Exploratory -> Samrt Water Bottle
+  // Exploratory -> Smart Water Bottle
   // Explore - Operators Once Again
   
 }
