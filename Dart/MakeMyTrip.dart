@@ -3,9 +3,7 @@ class OneWay {
   String? to;
   String? departure;
 
-  OneWay({this.from, this.to, this.departure}) {
-    print("${from}  -->  ${to}  |  ${departure}");
-  }
+  OneWay({this.from, this.to, this.departure});
 
   @override
   String toString() {
@@ -41,12 +39,17 @@ class MultiCity extends OneWay {
 }
 
 void main() {
+  print("\n---ONE WAY---");
+  print(OneWay(from: 'Chandigarh', to: 'Delhi', departure: '30 July, 2021'));
+
+  print("\n---Round Trip---");
   print(RoundTrip(
       from: 'Delhi',
       to: 'Bangalore',
       departure: '28 July, 2021',
       Return: 'Delhi'));
 
+  print("\n---MULTI CITY---");
   print(MultiCity(
       from: 'Delhi',
       to: 'Bangalore',
