@@ -66,8 +66,8 @@ class User {
     print("--------------");
     print("User Details: ");
     print("--------------");
-    print('${email}\n${name}\n${ID}\n${address}\n${number}\n${noOfProducts}\n');
-
+    print('Email - ${email}\nName - ${name}\nUser ID - ${ID}\nAddress - ${address}\nPhone Number - ${number}\nNo. of Profucts - ${noOfProducts}\n');
+    
     print("-----------------");
     print("Product Details: ");
     print("-----------------");
