@@ -27,16 +27,29 @@ class RoundTrip extends OneWay {
   }
 }
 
-class MultiCity extends OneWay {
+// class MultiCity extends OneWay {
+//   int? noOfTrips;
+
+//   MultiCity({this.noOfTrips, from, to, departure})
+//       : super(from: from, to: to, departure: departure);
+
+//   @override
+//   String toString() {
+//     // TODO: implement toString
+//     return (super.toString() + {'noOfTrips': noOfTrips}.toString());
+//   }
+// }
+
+class MultiCity {
   int? noOfTrips;
+  List<OneWay>? oneWay;
 
-  MultiCity({this.noOfTrips, from, to, departure})
-      : super(from: from, to: to, departure: departure);
-
-  @override
-  String toString() {
-    // TODO: implement toString
-    return (super.toString() + {'noOfTrips': noOfTrips}.toString());
+  MultiCity({this.noOfTrips, this.oneWay}) {
+    print("'noOfTrips': ${noOfTrips}\n");
+    oneWay!.forEach((element) {
+      print(
+          "from: ${element.from}, to: ${element.to}, departure: ${element.departure}");
+    });
   }
 }
 
@@ -52,9 +65,9 @@ void main() {
       Return: 'Delhi'));
 
   print("\n---MULTI CITY---");
-  print(MultiCity(
-      from: 'Delhi',
-      to: 'Bangalore',
-      departure: '28 July, 2021',
-      noOfTrips: 1));
+  print(MultiCity(noOfTrips: 3, oneWay: [
+    OneWay(from: 'A', to: 'B', departure: '30 July, 2021'),
+    OneWay(from: 'B', to: 'C', departure: '30 July, 2021'),
+    OneWay(from: 'C', to: 'D', departure: '31 July, 2021')
+  ]));
 }
