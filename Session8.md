@@ -74,6 +74,43 @@ class Home extends StatelessWidget {
 ```
 ![image](https://user-images.githubusercontent.com/53931644/127537667-9af9575f-7f97-45f2-bb55-a9a760441289.png)
 
+#### Displaying Image
+```dart
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My App"),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange,
+      ),
+      body: Center(
+        child: Image(
+          image: NetworkImage('https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+        )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("Click"),
+        backgroundColor: Colors.deepOrange,
+      ),
+    );
+  }
+}
+
+```
+
 ```dart
 import 'package:flutter/material.dart';
 
