@@ -114,6 +114,51 @@ class Home extends StatelessWidget {
 
 ![image](https://user-images.githubusercontent.com/53931644/127541262-d5988bb9-2305-4694-be63-e6a724d10775.png)
 
+### To Add Button
+
+```dart
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My App"),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange,
+      ),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: () {},
+            child: Text("Click Me!",
+              style: TextStyle(
+                color: Colors.black,
+              ),
+            ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("Click"),
+        backgroundColor: Colors.deepOrange,
+      ),
+    );
+  }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/53931644/127545600-b5a76fdd-4573-4000-8c62-c17b564e0f0b.png)
+
 ### To Add Icon
 
 ```dart
