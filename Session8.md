@@ -72,6 +72,7 @@ class Home extends StatelessWidget {
 }
 
 ```
+![image](https://user-images.githubusercontent.com/53931644/127537667-9af9575f-7f97-45f2-bb55-a9a760441289.png)
 
 ```dart
 import 'package:flutter/material.dart';
