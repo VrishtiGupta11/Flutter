@@ -114,6 +114,50 @@ class Home extends StatelessWidget {
 
 ![image](https://user-images.githubusercontent.com/53931644/127541262-d5988bb9-2305-4694-be63-e6a724d10775.png)
 
+### To Add Icon
+
+```dart
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My App"),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange,
+      ),
+      body: Center(
+        child: ElevatedButton.icon(
+            onPressed: () {},
+            icon: Icon(
+              Icons.mail
+            ),
+            label: Text("Mail Me!"),
+        )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("Click"),
+        backgroundColor: Colors.deepOrange,
+      ),
+    );
+  }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/53931644/127544624-42937d28-db36-48db-acbf-26f40c680640.png)
+
 ```dart
 import 'package:flutter/material.dart';
 
