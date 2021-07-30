@@ -192,6 +192,9 @@ class _HomePageState extends State<HomePage> {
 
 ```
 
+![image](https://user-images.githubusercontent.com/53931644/127610104-e0450fb5-d72e-40ad-8ecb-490600834e75.png)
+
+
 #### Increment of the number on clicking + icon
 
 ```dart
