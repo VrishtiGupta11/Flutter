@@ -1,3 +1,4 @@
+```dart
 // Synchronous Operation  ->  A synchronous operation blocks other operations from executing until it completes.
 // Synchronous Function  -> A function that only performs Synchronous Operations
 
@@ -106,3 +107,4 @@ void main() async {
   print("Final Response: $finalResponse");
   print("App finished");
 }
+```
